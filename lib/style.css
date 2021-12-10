@@ -1,0 +1,107 @@
+:root{
+    --primary-color : #06b6d4;
+    --white-color : #ecfeff
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.container-center{
+    max-width: 600px;
+    margin: auto;
+}
+
+/* links */
+.link{
+    cursor: pointer;
+    color: var(--white-color);
+    text-decoration: none;
+}
+.link-active{
+    border-bottom: 0.3rem solid black;
+    border-bottom-style: dashed;
+}
+.link-primary{
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: fit-content;
+    color: var(--white-color);
+    font-size: larger;
+    font-weight: bold;
+}
+/* list */
+.bullet-inline{
+    display: inline;
+}
+.non-bullet{
+    list-style-type: none;
+}
+
+/* navigation */
+.navigation{
+    display: block;
+    border: 1px solid black;
+    background-color: var(--primary-color);
+    border-bottom-left-radius: 2rem;
+}
+.navigationHeading{
+    color: var(--white-color);
+}
+.navigationPill{
+    display: inline;
+    color: var(--white-color);
+    width: auto;
+    padding: 1rem;
+}
+.navigationBtns{
+    text-align: right;
+    margin-right: 1rem;
+}
+
+/* content : isTriangle */
+.content-isTriangle{
+      text-align: center;  
+}
+.isTriangleInput{
+    padding: 0.5rem;
+    border: 1px solid black;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.isTriangleInput input{
+    border: 1px solid black;
+    border-radius: 1rem;
+    width: 60%;
+    height: 30px;
+}
+
+/* footer */
+footer{
+    display: block;
+    background-color: var(--primary-color);
+    width: 100%;
+    border-top-right-radius: 1rem;
+    color: var(--white-color);
+    height: auto;
+    padding-bottom: 10px;
+}
+footer h2{
+    text-align: center;
+    padding: 1rem;
+}
+.connect-pills{
+    font-size: large;
+    text-decoration: underline;
+    padding: 1rem;
+}
+.connect-btns{
+    display: block;
+    text-align: center;
+}
