@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challenge | Triangle</title>
     <link rel="stylesheet" href="/lib/style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- navigation -->
     <nav class="navigation">
-      <h1 class="navigationHeading">WEBSITE | TRIANGLES</h1>
-      <ul class="navigationBtns">
-        <li class="navigationPill">
-          <h2 style="display: inline;"><a href="/index.html" class="link">IsTriangle</a>
-          </h2>
-        </li>
-        <li class="navigationPill">
-            <h2 style="display: inline;"><a href="/lib/pages/tirangleQuiz.html" class="link">Triangle Quiz</a>
-            </h2>
-        </li>
-        <li class="navigationPill">
-            <h2 style="display: inline;"><a href="/lib/pages/calculateHypotenuse.html" class="link">Calculate hypotenuse</a>
-            </h2>
-        </li>
-        <li class="navigationPill">
-            <h2 style="display: inline;"><a href="/lib/pages/areaOfTriangle.html" class="link link-active">Area of Triangle</a>
-            </h2>
-        </li>
-      </ul>
+        <h1 class="navigationHeading">WEBSITE | TRIANGLES</h1>
+        <ul class="navigationBtns">
+            <li class="navigationPill">
+                <h2 style="display: inline;"><a href="/index.html" class="link">IsTriangle</a>
+                </h2>
+            </li>
+            <li class="navigationPill">
+                <h2 style="display: inline;"><a href="/lib/pages/tirangleQuiz.html" class="link">Triangle Quiz</a>
+                </h2>
+            </li>
+            <li class="navigationPill">
+                <h2 style="display: inline;"><a href="/lib/pages/calculateHypotenuse.html" class="link">Calculate
+                        hypotenuse</a>
+                </h2>
+            </li>
+            <li class="navigationPill">
+                <h2 style="display: inline;"><a href="/lib/pages/areaOfTriangle.html" class="link link-active">Area of
+                        Triangle</a>
+                </h2>
+            </li>
+        </ul>
     </nav>
 
     <!-- Content -->
-    
+
     <div class="container container-center content-isTriangle">
         <div class="isTriangleInput">
-            <h3>angle 1 :</h3>
-            <input type="number"></input>
+            <h3>Length of side 1 :</h3>
+            <input type="number" class="input"></input>
         </div>
         <div class="isTriangleInput">
-            <h3>angle 2 :</h3>
-            <input type="number"></input>
+            <h3>Length of side 2 :</h3>
+            <input type="number" class="input"></input>
         </div>
         <div class="isTriangleInput">
-            <h3>angle 3 :</h3>
-            <input type="number"></input>
+            <h3>Length of side 3 :</h3>
+            <input type="number" class="input"></input>
         </div>
 
         <button class="btnSubmit link link-primary">CHECK</button>
     </div>
-
+    <div class="container container-center" id="output"></div>
     <!-- footer -->
     <footer>
         <h2>Connect with me</h2>
@@ -71,5 +75,8 @@
             </li>
         </ul>
     </footer>
-  </body>
+
+    <script src="../scripts/areaOfTriangle.js"></script>
+</body>
+
 </html>

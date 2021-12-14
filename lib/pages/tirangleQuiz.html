@@ -13,63 +13,115 @@
       <h1 class="navigationHeading">WEBSITE | TRIANGLES</h1>
       <ul class="navigationBtns">
         <li class="navigationPill">
-          <h2 style="display: inline;"><a href="/index.html" class="link">IsTriangle</a>
+          <h2 style="display: inline">
+            <a href="/index.html" class="link">IsTriangle</a>
           </h2>
         </li>
         <li class="navigationPill">
-            <h2 style="display: inline;"><a href="/lib/pages/tirangleQuiz.html" class="link link-active">Triangle Quiz</a>
-            </h2>
+          <h2 style="display: inline">
+            <a href="/lib/pages/tirangleQuiz.html" class="link link-active"
+              >Triangle Quiz</a
+            >
+          </h2>
         </li>
         <li class="navigationPill">
-            <h2 style="display: inline;"><a href="/lib/pages/calculateHypotenuse.html" class="link">Calculate hypotenuse</a>
-            </h2>
+          <h2 style="display: inline">
+            <a href="/lib/pages/calculateHypotenuse.html" class="link"
+              >Calculate hypotenuse</a
+            >
+          </h2>
         </li>
         <li class="navigationPill">
-            <h2 style="display: inline;"><a href="/lib/pages/areaOfTriangle.html" class="link">Area of Triangle</a>
-            </h2>
+          <h2 style="display: inline">
+            <a href="/lib/pages/areaOfTriangle.html" class="link"
+              >Area of Triangle</a
+            >
+          </h2>
         </li>
       </ul>
     </nav>
 
     <!-- Content -->
-    
+
     <div class="container container-center content-isTriangle">
-        <div class="isTriangleInput">
-            <h3>angle 1 :</h3>
-            <input type="number"></input>
-        </div>
-        <div class="isTriangleInput">
-            <h3>angle 2 :</h3>
-            <input type="number"></input>
-        </div>
-        <div class="isTriangleInput">
-            <h3>angle 3 :</h3>
-            <input type="number"></input>
-        </div>
+      <div class="questionInput">
+        <h3>
+          What is the third angle for the triangle where angle1 = 45° and angle2
+          = 45°?
+        </h3>
+        <input
+          type="radio"
+          name="question1"
+          class="questionInput"
+          value="60"
+        />60°
+        <input type="radio" name="question1" class="question" value="60" />45°
+        <input type="radio" name="question1" class="question" value="90" />90°
+      </div>
 
-        <button class="btnSubmit link link-primary">CHECK</button>
+      <div class="questionInput">
+        <h3>
+          What is the third angle for the triangle where angle1 = 45° and angle2
+          = 45°?
+        </h3>
+        <input
+          type="radio"
+          name="question2"
+          class="questionInput"
+          value="acute"
+        />acute
+        <input
+          type="radio"
+          name="question2"
+          class="question"
+          value="obtuse"
+        />obtuse
+        <input
+          type="radio"
+          name="question2"
+          class="question"
+          value="right-angled"
+        />right angled
+      </div>
+
+      <div class="questionInput">
+        <h3>A triangle can have ?</h3>
+        <input
+          type="radio"
+          name="question3"
+          class="questionInput"
+          value="two-right-angles"
+        />two right angles
+        <input
+          type="radio"
+          name="question3"
+          class="question"
+          value="one-right-angle"
+        />one right angle
+      </div>
+      <button class="btnSubmit link link-primary">CHECK</button>
     </div>
-
+    <div class="container container-center" id="output"></div>
     <!-- footer -->
     <footer>
-        <h2>Connect with me</h2>
-        <ul class="non-bullet connect-btns container container-center">
-            <li class="bullet-inline connect-pills">
-                <a href="https://www.linkedin.com/in/mohitbehlaggressify/" class="link ">
-                    Linkedin
-                </a>
-            </li>
-            <li class="bullet-inline connect-pills">
-                <a href="https://github.com/MohitBehl" class="link ">
-                    GitHub
-                </a>
-            </li>
-            <li class="bullet-inline connect-pills">
-                <a href="https://twitter.com/aggressify" class="link ">
-                    Twitter
-                </a>
-            </li>
-        </ul>
+      <h2>Connect with me</h2>
+      <ul class="non-bullet connect-btns container container-center">
+        <li class="bullet-inline connect-pills">
+          <a
+            href="https://www.linkedin.com/in/mohitbehlaggressify/"
+            class="link"
+          >
+            Linkedin
+          </a>
+        </li>
+        <li class="bullet-inline connect-pills">
+          <a href="https://github.com/MohitBehl" class="link"> GitHub </a>
+        </li>
+        <li class="bullet-inline connect-pills">
+          <a href="https://twitter.com/aggressify" class="link"> Twitter </a>
+        </li>
+      </ul>
     </footer>
+    <script src="../scripts/triangleQuiz.js"></script>
   </body>
 </html>
